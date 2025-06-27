@@ -43,9 +43,13 @@ Aplicativo desenvolvido para facilitar a oferta e solicitação de caronas entre
 
 📦 udescar/
 ├── 📱 app/ → Projeto Android (Activities, XMLs, recursos)
+
 │ └── src/...
+
 ├── 🖥️ backend/ → Projeto Java Spring Boot com API REST
+
 │ └── src/...
+
 └── 📄 README.md → Documentação do projeto
 
 ## 🚀 Como Executar
