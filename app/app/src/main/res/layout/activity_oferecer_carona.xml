@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OferecerCarona">
+
+    <TextView
+        android:id="@+id/tituloOferecer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Oferecer carona"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_carro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carro"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="197dp" />
+
+    <EditText
+        android:id="@+id/label_carro"
+        android:layout_width="346dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <TextView
+        android:id="@+id/txt_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <EditText
+        android:id="@+id/label_end"
+        android:layout_width="346dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <TextView
+        android:id="@+id/txt_agend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agendamento"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="377dp" />
+
+    <EditText
+        android:id="@+id/label_agend"
+        android:layout_width="346dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="396dp" />
+
+    <Button
+        android:id="@+id/btn_ir_udesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir para a UDESC"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="456dp"
+        android:backgroundTint="#0A723F"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_voltar_udesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar da UDESC"
+        tools:layout_editor_absoluteX="225dp"
+        tools:layout_editor_absoluteY="456dp"
+        android:backgroundTint="#0A723F"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_voltar"
+        android:layout_width="229dp"
+        android:layout_height="39dp"
+        android:backgroundTint="#0A723F"
+        android:text="Voltar"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="664dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
