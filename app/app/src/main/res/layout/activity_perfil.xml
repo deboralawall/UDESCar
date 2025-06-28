@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil">
+
+    <!--em nome do usuario criar variavel para que o nome seja do usuario logado-->
+    <TextView
+        android:id="@+id/txt_nome_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Nome usuário"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/perfil"
+        android:layout_width="95dp"
+        android:layout_height="92dp"
+        android:contentDescription="Foto de perfil "
+        android:src="@drawable/perfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/txt_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nome_usuario"
+        app:layout_constraintVertical_bias="0.842" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="349dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/input_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="66dp"
+        android:layout_height="18dp"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/input_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintVertical_bias="0.733" />
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="347dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_bio"
+        android:layout_width="69dp"
+        android:layout_height="18dp"
+        android:text="Biografia"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_email"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="344dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="236dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_voltar3"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/green"
+        android:text="Voltar"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,94 +13,126 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:text="Oferecer carona"
-        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/input_carro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
 
     <TextView
         android:id="@+id/txt_carro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
         android:text="Carro"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="197dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/label_carro"
+        android:id="@+id/input_carro"
         android:layout_width="346dp"
         android:layout_height="45dp"
+        android:layout_marginBottom="44dp"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="216dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txt_carro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txt_end"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
         android:text="Endereço"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="290dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_carro" />
 
     <EditText
-        android:id="@+id/label_end"
+        android:id="@+id/input_end"
         android:layout_width="346dp"
         android:layout_height="45dp"
+        android:layout_marginBottom="384dp"
         android:ems="10"
         android:inputType="textPostalAddress"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="309dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txt_agend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
         android:text="Agendamento"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="377dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_end" />
 
     <EditText
-        android:id="@+id/label_agend"
+        android:id="@+id/input_agend"
         android:layout_width="346dp"
         android:layout_height="45dp"
+        android:layout_marginBottom="204dp"
         android:ems="10"
         android:inputType="date"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="396dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_agend"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btn_ir_udesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
         android:text="Ir para a UDESC"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="456dp"
-        android:backgroundTint="#0A723F"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_voltar_udesc"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
 
     <Button
         android:id="@+id/btn_voltar_udesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="@color/green"
         android:text="Voltar da UDESC"
-        tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="456dp"
-        android:backgroundTint="#0A723F"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
 
     <Button
         android:id="@+id/btn_voltar"
-        android:layout_width="229dp"
-        android:layout_height="39dp"
-        android:backgroundTint="#0A723F"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/green"
         android:text="Voltar"
         android:textColor="@android:color/white"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="664dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

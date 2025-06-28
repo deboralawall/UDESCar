@@ -48,6 +48,30 @@ public class MainActivity extends AppCompatActivity {
         });
         //--------------------------------------------------------------------------
 
+        //Ação de clicar no botão 'viagens' vai para a tela de viagens
+        Button btn_viagens = findViewById(R.id.btn_viagens);
+
+        btn_viagens.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Viagens.class);
+                startActivity(intent);
+            }
+        });
+        //--------------------------------------------------------------------------
+
+        //Ação de clicar no botão 'perfil' vai para a tela de perfil
+        Button btn_perfil = findViewById(R.id.btn_perfil);
+
+        btn_perfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Perfil.class);
+                startActivity(intent);
+            }
+        });
+        //--------------------------------------------------------------------------
+
     }
-    
+
 }

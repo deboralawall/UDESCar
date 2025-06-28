@@ -10,74 +10,86 @@
 
     <ImageView
         android:id="@+id/logo_udesc"
-        android:layout_width="255dp"
-        android:layout_height="136dp"
+        android:layout_width="145dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="32dp"
         android:contentDescription="Logo da UDESC"
         android:src="@drawable/logo_udesc"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txt_titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
 
     <TextView
-        android:id="@+id/tituloCaronas"
+        android:id="@+id/txt_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:gravity="center"
+        android:lineSpacingExtra="16dp"
         android:text="Caronas UDESC CCT"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="181dp" />
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pesquisar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_udesc" />
 
     <Button
         android:id="@+id/btn_pesquisar"
-        android:layout_width="190dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/green"
         android:text="Pesquisar"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/btn_oferecer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="#0A723F"
-        android:textColor="@android:color/white"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_oferecer"
-        android:layout_width="190dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="312dp"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/green"
         android:text="Oferecer"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btn_viagens"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="#0A723F"
-        android:textColor="@android:color/white"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_viagens"
-        android:layout_width="190dp"
-        android:layout_height="45dp"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/green"
         android:text="Viagens"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btn_perfil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_oferecer"
-        app:layout_constraintVertical_bias="0.108"
-        android:backgroundTint="#0A723F"
-        android:textColor="@android:color/white"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_perfil"
-        android:layout_width="190dp"
-        android:layout_height="45dp"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="188dp"
+        android:backgroundTint="@color/green"
         android:text="Perfil"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_viagens"
-        app:layout_constraintVertical_bias="0.145"
-        android:backgroundTint="#0A723F"
-        android:textColor="@android:color/white"/>
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

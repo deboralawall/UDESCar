@@ -13,7 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:text="Reservar Carona"
-        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,66 +25,88 @@
         android:id="@+id/txt_endereco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
         android:text="Endereço"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="271dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txt_agendamento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/label_endereco"
         android:layout_width="346dp"
         android:layout_height="45dp"
+        android:layout_marginBottom="40dp"
         android:ems="10"
         android:inputType="textPostalAddress"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="290dp" />
+        app:layout_constraintBottom_toTopOf="@+id/label_agendamento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloReservar"
+        app:layout_constraintVertical_bias="0.959" />
 
     <TextView
         android:id="@+id/txt_agendamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="280dp"
         android:text="Agendamento"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="358dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_voltar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/label_agendamento"
         android:layout_width="346dp"
         android:layout_height="45dp"
+        android:layout_marginBottom="236dp"
         android:ems="10"
         android:inputType="date"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="377dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_voltar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_ir_udesc2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#0A723F"
+        android:layout_marginBottom="272dp"
+        android:backgroundTint="@color/green"
         android:text="Ir para a UDESC"
         android:textColor="@android:color/white"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="437dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_voltar_udesc2"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_voltar_udesc2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#0A723F"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="272dp"
+        android:backgroundTint="@color/green"
         android:text="Voltar da UDESC"
         android:textColor="@android:color/white"
-        tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="437dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btn_voltar2"
-        android:layout_width="229dp"
-        android:layout_height="39dp"
-        android:backgroundTint="#0A723F"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/green"
         android:text="Voltar"
         android:textColor="@android:color/white"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="664dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
